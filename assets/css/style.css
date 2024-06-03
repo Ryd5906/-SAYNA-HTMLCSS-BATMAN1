@@ -4,9 +4,9 @@
     --yellow-light:#f8f184;
     --blue-color:#19587d;
     --white-color:#ffffff;
-    --gradient-white:#eddebf39;
-    --gradient-red:#890008;
-    --gradient-blue:#19587d60;
+    --gradient-white:#eddebf76;
+    --gradient-red:#890009d2;
+    --gradient-blue: #19587d47;
 
 
 }
@@ -30,8 +30,17 @@ body{
     background-color: black;
     color: white;
     font-family: 'space grotesk';
-    font-weight: 50;
+    font-weight: 300;
 }
+
+.up-bar{
+    border-top: rgba(255, 255, 255, 0.079) 4px solid;
+    position: relative;
+    top: 132px;
+    width: 90%;
+    left: 102px;
+}
+
 
 nav{
     display:flex;
@@ -53,10 +62,13 @@ nav ul li a{
     
 
 }
-nav ul li a:hover{
+nav ul  a:hover{
     color: var(--yellow-color);
 }
-
+.all-hover:hover{
+    filter: invert(4%) sepia(100%) saturate(2030%) hue-rotate(354deg) brightness(105%) contrast(107%);color: var(--yellow-color);
+    
+}
 /* Design de la section hero */
 
 #hero {
@@ -81,6 +93,11 @@ nav ul li a:hover{
         80deg,var(--gradient-white),var(--gradient-red)
     );
     box-shadow: var(--);
+}
+#hero .texte{
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
 }
 #hero .fleche{
     display: block;
@@ -170,4 +187,110 @@ nav ul li a:hover{
 #multimedia .yellow{
     color: #FFFF00;
 }
+
 /*Design de la partie Contact - Formulaire*/
+
+#contact{
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-blue)
+    ) ;
+    padding: 70px 0;
+    
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 32px;
+}
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid darkgray;
+    background-color: transparent;
+    padding: 10px;
+}
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid darkgray;
+    padding-top: 15px;
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+::placeholder{
+    color: #f8f184;
+    font-size: 15px;
+}
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    border-image: linear-gradient(
+        69deg, #eddebf39, #19587d60
+    ) 1;
+}
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+}
+#citations{
+    margin: 90px;
+}
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#citations .citation-auteur{
+    font-size: 10px;
+    padding-top: 30px;
+    font-family: 'rajdhani';
+}
+#citations .guillemet-close{
+    float: right;
+}
+/*Design de mon footer*/
+footer{
+    margin-top: 160px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 10px;
+}
+footer .social-footer{
+    text-align: center;
+    margin-top: 50px;
+}
+footer .social-item{
+    padding: 15px;
+}

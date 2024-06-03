@@ -7,12 +7,15 @@
     <title>Batman T4SU</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
+    <div class="up-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+    <div class="down-bar"></div>
     <header>
         <nav class="container">
             <a href="index.html">
-                <img src="./assets/Logos/logohome.png" alt="logohome">
+                <img class="all-hover" src="./assets/Logos/logohome.png" alt="logohome">
             </a>
             <ul>
                 <li><a href="index.html">Home</a>
@@ -205,20 +208,21 @@
                 </div>
                 
                 <div class="image-bande-annonce">
-                    <img src="./assets/Illustrations/Bathome_ba2.png" alt="Bathome_ba2">
+                    <img width="100%" src="./assets/Illustrations/Bathome_ba2.png" alt="Bathome_ba2">
                 </div>
             </div>
         </section>
         <!--formulaire-->
         <section id="contact">
-            <div>
+            <div class="form">
                 <h2>PRENONS CONTACT</h2>
                 <form action="">
                     <label class="titre" for="email">Adresse email</label>
-                    <input type="email" name="email" placeholder="email"></input>
+                    <input type="email" name="email" placeholder="Mon email"></input>
                     <label class="titre" for="newsletter">NEWSLETTER</label>
                     <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures deBatman : </label>
                     <input type="checkbox">
+                    <br>
                     <br>
                     <div>
                         <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter
@@ -234,11 +238,11 @@
                     </div>
                     <div class="btn-group">
                         <input type="radio" id="film">
-                        <label for="">Des films</label>
+                        <label for="film">Des films</label>
                         <input type="radio" id="comics">
-                        <label for="">Des comics</label>
+                        <label for="comics">Des comics</label>
                         <input type="radio" id="tout">
-                        <label for="">De tout</label>
+                        <label for="tout">De tout</label>
                     </div>
                     <p class="titre">MESSAGE</p>
                     <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
@@ -247,40 +251,43 @@
             </div>
         </section>
         <!--section citations-->
-        <section>
-            <div>
-                <div>
+        <section id="citations">
+            <div class="container">
+                <div class="guillemet-open">
                     <img src="./assets/Logos/icon_guillemets_1.png" alt="">
                 </div>
-                <div>
-                    <div>
+                <div class="citation-carte">
+                    <div class="citation-text">
                         <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
                     </div>
-                    <div>
+                    <div class="citation-auteur">
                         <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
                     </div>
                 </div>
-                <div>
+                <div class="guillemet-close">
                     <img src="./assets/Logos/icon_guillemets_2.png" alt="">
                 </div>
             </div>
         </section>
     </main>
+    <div class="clearfix"></div>
     <footer>
-        <div>
-            <img src="./assets/Logos/icon_WB.png" alt="">
-            <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
-                Snyder & Reeves</p>
-        </div>
-        <div>
-            <a href="#">
-                <img src="./assets/Logos/logo_sayna_white.png" alt="">
-                <img src="./assets/Logos/icon_x.png" alt="">
-                <img src="./assets/Logos/icon_DC.png" alt="">
-            </a>
-            <a href="#"><img src="./assets/Logos/icon_facebook.png" alt=""></a>
-            <a href="#"><img src="./assets/Logos/icon_ig.png" alt=""></a>
-            <a href="#"><img src="./assets/Logos/icon_tw.png" alt=""></a>
+        <div class="container">
+            <div class="text-footer">
+                <img src="./assets/Logos/icon_WB.png" alt="">
+                <span>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
+                    Snyder & Reeves</span>
+            </div>
+            <div class="social-footer">
+                <a class="social-item" href="#">
+                    <img src="./assets/Logos/logo_sayna_white.png" alt="">
+                    <img src="./assets/Logos/icon_x.png" alt="">
+                    <img src="./assets/Logos/icon_DC.png" alt="">
+                </a>
+                <a class="social-item" href="#"><img src="./assets/Logos/icon_facebook.png" alt=""></a>
+                <a class="social-item" href="#"><img src="./assets/Logos/icon_ig.png" alt=""></a>
+                <a class="social-item" href="#"><img src="./assets/Logos/icon_tw.png" alt=""></a>
+            </div>
         </div>
     </footer>
 </body>
