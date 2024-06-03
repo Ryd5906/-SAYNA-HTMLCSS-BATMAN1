@@ -135,3 +135,22 @@ nav ul li a:hover{
     margin: 0 auto;
     padding-top: 150px;
 }
+/*Design de la partie multimedia*/
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+
+}
+#multimedia .slider-image{
+    width: 100%;
+}
+#multimedia .slider-content{
+    padding: 15px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--blue-color)
+    );
+}
+#multimedia p{
+    font-size: 14px;
+}
