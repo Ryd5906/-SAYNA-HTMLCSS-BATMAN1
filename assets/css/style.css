@@ -2,10 +2,11 @@
 :root{
     --yellow-color:#FFFF00;
     --yellow-light:#f8f184;
-    --blue-color:#19587D;
+    --blue-color:#19587d;
     --white-color:#ffffff;
-    --gradient-white:#EDDEBF;
+    --gradient-white:#eddebf39;
     --gradient-red:#890008;
+    --gradient-blue:#19587d60;
 
 
 }
@@ -135,6 +136,16 @@ nav ul li a:hover{
     padding-top: 150px;
 }
 /*Design de la partie multimedia*/
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+#multimedia .right{
+    right: -85%;
+}
+
 #multimedia .slider-multimedia{
     display: flex;
     width: 60%;
@@ -142,14 +153,21 @@ nav ul li a:hover{
 
 }
 #multimedia .slider-image{
-    width: 100%;
+    width: 20%;
+
 }
 #multimedia .slider-content{
     padding: 15px;
     background: linear-gradient(
-        80deg,var(--gradient-white),var(--blue-color)
+        80deg,var(--gradient-white),var(--gradient-blue)
     );
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 #multimedia p{
     font-size: 14px;
 }
+#multimedia .yellow{
+    color: #FFFF00;
+}
+/*Design de la partie Contact - Formulaire*/

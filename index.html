@@ -194,7 +194,7 @@
                     <div class="slider-content">
                         <h2>ACTION, ADVENTURE</h2>
                         <h3>Batman Begins</h3>
-                        <p>IMDB: <span>8.2</span></p>
+                        <p>IMDB: <span class="yellow">8.2</span></p>
                         <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
                             traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
                             guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
@@ -210,34 +210,42 @@
             </div>
         </section>
         <!--formulaire-->
-        <div>
-            <h2>PRENONS CONTACT</h2>
-            <form action="">
-                <label for="email">Adresse email</label>
-                <input type="email" name="email" placeholder="email"></input>
-                <label for="newsletter">NEWSLETTER</label>
-                <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures deBatman : </label>
-                <input type="checkbox">
-                <br>
-                <div>
-                    <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter
-
-                        <img src="./assets/Logos/icon_flèche_2.png" alt="">
-                    </span>
-                </div>
-                <div>
-                    <p>
-                        Souhaitez-vous recevoir des news
-                    </p>
-                </div>
-                <a href="">Des films</a>
-                <a href="">Des comics</a>
-                <a href="">De tout</a>
-                <p>MESSAGE</p>
-                <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
-                <input type="submit" value="CONFIRMER">
-            </form>
-        </div>
+        <section id="contact">
+            <div>
+                <h2>PRENONS CONTACT</h2>
+                <form action="">
+                    <label class="titre" for="email">Adresse email</label>
+                    <input type="email" name="email" placeholder="email"></input>
+                    <label class="titre" for="newsletter">NEWSLETTER</label>
+                    <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures deBatman : </label>
+                    <input type="checkbox">
+                    <br>
+                    <div>
+                        <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter
+                        </span>
+                        <span class="icon">
+                            <img src="./assets/Logos/icon_flèche_2.png" alt="">
+                        </span>
+                    </div>
+                    <div>
+                        <p class="news">
+                            Souhaitez-vous recevoir des news
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <input type="radio" id="film">
+                        <label for="">Des films</label>
+                        <input type="radio" id="comics">
+                        <label for="">Des comics</label>
+                        <input type="radio" id="tout">
+                        <label for="">De tout</label>
+                    </div>
+                    <p class="titre">MESSAGE</p>
+                    <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                    <input type="submit" value="CONFIRMER">
+                </form>
+            </div>
+        </section>
         <!--section citations-->
         <section>
             <div>
