@@ -11,7 +11,7 @@
 
 }
 h1{
-    color: red;
+    color: white;
     font-family: 'rajdhani';
     font-weight: 400;
 }
@@ -27,20 +27,20 @@ h1{
 }
 
 body{
-    background-color: black;
+    background-color:black;
     color: white;
     font-family: 'space grotesk';
     font-weight: 300;
 }
 
 .up-bar{
-    border-top: #bcbbbd8c solid 4px;
+    border-top: #BCBBBD solid 4px;
+    opacity: 20%;
     position: relative;
-    top: 132px;
+    top: 130px;
     width: 90%;
     left: 102px;
 }
-
 
 nav{
     display:flex;
@@ -73,28 +73,29 @@ nav ul  a:hover{
 
 #hero {
     background-image: url(../Illustrations/Bathome1.png);
-    background-position: top center;
+    background-position: top-left;
     background-size: cover;
-    height: 5%;
+    height: 100%;
     background-repeat: no-repeat;
-    background-color: #19587D;
+    background-color: rgb(8, 0, 0);
+    margin-top: 5px;
 }
 
 #hero .titre{
     margin: 20px 0;
+    margin-bottom: 50px;
 }
 .btn{
     text-decoration: none;
     color: var(--white-color);
     font-size: 20px;
-    padding: 10px 20px;
-    margin-top: 30px;
+    padding: 25px 60px;
+    margin: 25px ;
     background: linear-gradient(
-        80deg,var(--gradient-white),var(--gradient-red)
+        60deg,var(--gradient-white),var(--gradient-red)
     );
-    box-shadow: var(--);
     font-family: 'space grotesk';
-    opacity: 40%;
+    opacity: 85%;
 }
 .btn:hover{
     background-color: white;
@@ -110,11 +111,12 @@ nav ul  a:hover{
     text-align: center;
     width: 45%;
     margin: 0 auto;
+    font-size: 20px;
 }
 #hero .fleche{
     display: block;
     margin: 0 auto;
-    margin-top: 400px;
+    margin-top: 650px;
 }
 /*partie scrolling*/
 .scroll {
@@ -122,8 +124,8 @@ nav ul  a:hover{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 10px;
-    top: 200px;
+    right: 40px;
+    top: 270px;
 }
 .scroll .social{
     margin-top: 50px;
@@ -132,8 +134,6 @@ nav ul  a:hover{
     filter: invert(4%) sepia(100%) saturate(2030%) hue-rotate(354deg) brightness(105%) contrast(107%);color: var(--yellow-color);
     cursor: pointer;
 }
-
-
 /*Design de la section batman personnage */
 
 .batman-personnage{
@@ -147,20 +147,25 @@ nav ul  a:hover{
 }
 
 #batman-cinema, #batman-justice-league, #batman-nemesis, #batman-allies{
-    margin-top: 40px;
+    margin-top: 100px;
 }
 #batman-cinema .titre, #batman-justice-league .titre, #batman-nemesis .titre, #batman-allies .titre{
     font-weight: bold;
     margin: 0px;
+    font-size: 40px;
 }
 #batman-cinema .description, #batman-justice-league .description, #batman-nemesis .description, #batman-allies .description{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    margin-top: 40px;
     text-align: justify;
     width: 100%;
-    font-size: 21px;
+    font-size: 25px;
 }
 #batman-cinema .personnage-info, #batman-justice-league .personnage-info, #batman-nemesis .personnage-info, #batman-allies .personnage-info{
     text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: 'rajdhani';
 }
 
 
@@ -180,28 +185,39 @@ nav ul  a:hover{
     border: none;
 }
 #multimedia .right{
-    right: -85%;
+    right: -90%;
 }
 
 #multimedia .slider-multimedia{
     display: flex;
-    width: 50%;
+    width: 45%;
     margin: 40px auto;
+    
+    
 }
+
 #multimedia .slider-image{
-    width: 80%;
-    height: 100%;
+    width: 50%;
+    padding-top: 12.5px;
+    border: 1px solid rgba(169, 169, 169, 0.449);
+
+    height: 0%;
 }
 #multimedia .slider-content{
     padding: 20px;
     background: linear-gradient(
-        80deg,var(--gradient-white),var(--gradient-blue)
+        100deg,var(--gradient-white),var(--gradient-blue)
     );
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    margin-bottom: 200px;
+    border: 1px solid rgba(169, 169, 169, 0.301);
+    border-right: transparent;
+    height: 0%;
 }
 #multimedia p{
     font-size: 14px;
+    padding-bottom: 5px;
 }
 #multimedia .yellow{
     color: #FFFF00;
@@ -211,7 +227,7 @@ nav ul  a:hover{
 
 #contact{
     background: linear-gradient(
-        80deg,var(--gradient-white),var(--gradient-blue)
+        150deg,var(--gradient-white),var(--gradient-blue)
     ) ;
     padding: 70px 0;
     margin-top: 200px;
@@ -260,6 +276,7 @@ nav ul  a:hover{
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    color: #ffffff;
 
 }
 .form input[type='radio']{
@@ -284,6 +301,8 @@ nav ul  a:hover{
 
 input[type='submit']{
     display: block;
+    color: #ffffff;
+    opacity: 40%;
     width: 230px;
     margin: 25px auto;
     padding: 15px;
@@ -292,6 +311,12 @@ input[type='submit']{
     background: linear-gradient(
         80deg,var(--gradient-white),var(--gradient-red)
     );
+}
+input[type='submit']:hover{
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    opacity: 100%;
 }
 #citations{
     margin: 90px;
