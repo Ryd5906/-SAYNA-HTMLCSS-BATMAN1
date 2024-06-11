@@ -10,10 +10,28 @@
 
 
 }
+/*fadeinleft des éléments(titre, texte, illustrations)*/
+.titre, .description, .personnage-info, .texte, .citation-text, .citation-auteur, .slider-content, .form{
+    animation: fadeinleft 5s;
+}
+@keyframes fadeinleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 h1{
     color: white;
     font-family: 'rajdhani';
     font-weight: 400;
+    font-size: 36px;
+
 }
 
 *{
@@ -37,11 +55,32 @@ body{
     border-top: #BCBBBD solid 4px;
     opacity: 20%;
     position: relative;
-    top: 130px;
-    width: 90%;
+    top: 132px;
+    width: 87.9%;
     left: 102px;
 }
 
+.left-bar{
+    position: absolute;
+    width: 1px;
+	height: 1070%;
+	top: 0;
+	bottom: 0;
+	left: 102px;
+	border-right: #BCBBBD solid 4px;
+    opacity: 20%;
+}
+
+.right-bar{
+    position: absolute;
+    width: 1px;
+	height: 1070%;
+	top: 0;
+	bottom: 0;
+	right: 102px;
+	border-right: #BCBBBD solid 4px;
+    opacity: 20%;
+}
 nav{
     display:flex;
     align-items: center;
@@ -94,8 +133,8 @@ nav ul  a:hover{
     background: linear-gradient(
         60deg,var(--gradient-white),var(--gradient-red)
     );
-    font-family: 'space grotesk';
-    opacity: 85%;
+    font-family: 'rajdhani';
+    opacity: 40%;
 }
 .btn:hover{
     background-color: white;
@@ -118,13 +157,20 @@ nav ul  a:hover{
     margin: 0 auto;
     margin-top: 650px;
 }
+/* position batman  bathome_12*/
+.right-bat{
+    position: absolute;
+    right: 1px;
+    top: 3150px;
+
+}
 /*partie scrolling*/
 .scroll {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 40px;
+    right: 51px;
     top: 270px;
 }
 .scroll .social{
@@ -151,7 +197,7 @@ nav ul  a:hover{
 }
 #batman-cinema .titre, #batman-justice-league .titre, #batman-nemesis .titre, #batman-allies .titre{
     font-weight: bold;
-    margin: 0px;
+    margin-top: 200px;
     font-size: 40px;
 }
 #batman-cinema .description, #batman-justice-league .description, #batman-nemesis .description, #batman-allies .description{
@@ -159,15 +205,21 @@ nav ul  a:hover{
     margin-top: 40px;
     text-align: justify;
     width: 100%;
-    font-size: 25px;
+    font-size: 18px;
 }
 #batman-cinema .personnage-info, #batman-justice-league .personnage-info, #batman-nemesis .personnage-info, #batman-allies .personnage-info{
     text-align: center;
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'rajdhani';
+    font-style: medium;
 }
-
+/*position chauve souris sur nemesis*/
+.chauve-souris{
+    top: 2305px;
+    left: 230px;
+    position: absolute;
+}
 
 .content{
     display: flex;
