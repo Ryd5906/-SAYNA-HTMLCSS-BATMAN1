@@ -11,8 +11,8 @@
 
 }
 /*fadeinleft des éléments(titre, texte, illustrations)*/
-.titre, .description, .personnage-info, .texte, .citation-text, .citation-auteur, .slider-content, .form{
-    animation: fadeinleft 5s;
+.titre, .description, .personnage-info, .texte, .citation-text, .citation-auteur, .slider-multimedia, .form, .batman-item, .justice-item, .image-bande-annonce, .right-bat, .chauve-souris{
+    animation: fadeinleft 6s;
 }
 @keyframes fadeinleft {
     0%{
@@ -97,12 +97,12 @@ nav ul li a{
     font-size: 25px;
     font-weight: 500;
     font-family:'rajdhani';
+    text-decoration: none;
     
-    
-
 }
 nav ul  a:hover{
     color: var(--yellow-color);
+    text-decoration: underline;
 }
 .all-hover:hover{
     filter: invert(4%) sepia(100%) saturate(2030%) hue-rotate(354deg) brightness(105%) contrast(107%);color: var(--yellow-color);
@@ -157,13 +157,7 @@ nav ul  a:hover{
     margin: 0 auto;
     margin-top: 650px;
 }
-/* position batman  bathome_12*/
-.right-bat{
-    position: absolute;
-    right: 1px;
-    top: 3150px;
 
-}
 /*partie scrolling*/
 .scroll {
     display: flex;
@@ -214,13 +208,17 @@ nav ul  a:hover{
     font-family: 'rajdhani';
     font-style: medium;
 }
-/*position chauve souris sur nemesis*/
+/*position sur le coté de la page*/
 .chauve-souris{
     top: 2305px;
     left: 230px;
     position: absolute;
 }
-
+.right-bat{
+    position: absolute;
+    right: 1px;
+    top: 3150px;
+}
 .content{
     display: flex;
     justify-content: center;
